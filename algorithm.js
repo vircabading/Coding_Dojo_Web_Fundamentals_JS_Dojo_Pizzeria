@@ -28,10 +28,10 @@ function pizzaOven (crustType, sauceType, cheeses, toppings) {
     return new_pizza;
 }
 
-function print_all_pizza_info (local_pizza_list]) {
-    for (var i=0; i < local_pizza_list.length; i++) {
+function print_all_pizza_info (local_pizza_list) {      // Function goes through each pizza in the array
+    for (var i=0; i < local_pizza_list.length; i++) {   //     aand prints the info on each pizza
         print_desc("Pizza #" + (i+1) + " info:");
-        local_pizza_list.pizzaInfo();
+        local_pizza_list[i].pizzaInfo();
         print_ln();
     }
 } 
@@ -39,11 +39,11 @@ function print_all_pizza_info (local_pizza_list]) {
 
 //// MAIN EXECUTABLE SECTION ////////////////////
 
-    //// MAKE THE PIZZA /////////////////////////
+    //// MAKE THE PIZZAS/////////////////////////
 
 pizza_list.push(pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"]));
 
     //// PRINT THE INFO ON THE PIZZAS MADE
-print_desc("Number of Pizzas: " + pizza_list.length);
 
-pizza_list[0].pizzaInfo();
+print_desc("Number of Pizzas: " + pizza_list.length);
+print_all_pizza_info(pizza_list);
