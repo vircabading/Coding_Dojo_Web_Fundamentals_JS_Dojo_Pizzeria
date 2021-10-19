@@ -43,8 +43,11 @@ function print_all_pizza_info (local_pizza_list) {      // Function goes through
 
 pizza_list.push(pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"]));
 pizza_list.push(pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"]));
+pizza_list.push(pizzaOven("thin crust", "traditional", ["mozzarella", "provolone"], 
+                            ["ham", "pineapple", "smoked bacon", "roasted red peppers"]));  // Hawaiian Pizza
 
     //// PRINT THE INFO ON THE PIZZAS MADE
 
+console.log("DOJO PIZZERIA");
 print_desc("Number of Pizzas: " + pizza_list.length);
 print_all_pizza_info(pizza_list);
