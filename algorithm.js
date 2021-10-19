@@ -3,7 +3,7 @@
 // By: Virgilio D. Cabading Jr. - October 18, 2021
 /////////////////////////////////////////////////
 
-import { print_desc } from "./module.js";
+import { print_desc } from "./module.js";               // Import functions from JS library
 import { print_ln } from "./module.js";
 
 //// VARIABLES DECLERATION //////////////////////
@@ -42,6 +42,7 @@ function print_all_pizza_info (local_pizza_list) {      // Function goes through
     //// MAKE THE PIZZAS/////////////////////////
 
 pizza_list.push(pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"]));
+pizza_list.push(pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"]));
 
     //// PRINT THE INFO ON THE PIZZAS MADE
 
