@@ -45,6 +45,9 @@ pizza_list.push(pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperon
 pizza_list.push(pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"]));
 pizza_list.push(pizzaOven("thin crust", "traditional", ["mozzarella", "provolone"], 
                             ["ham", "pineapple", "smoked bacon", "roasted red peppers"]));  // Hawaiian Pizza
+pizza_list.push(pizzaOven("hand tossed", "marinara", ["mozzarella", "parmesan"], 
+                            ["canadian bacon", "pepperoni", "red pepper", "green pepper", "onion", "basil"])); //Supreme Pizza
+
 
     //// PRINT THE INFO ON THE PIZZAS MADE
 
